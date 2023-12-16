@@ -172,7 +172,7 @@ const appRouter = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "/FoodApp",
         element: (
           <Body user={{ name: "Alish", email: "rawtalish@gmail.com" }} />
         ),

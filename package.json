@@ -3,9 +3,10 @@
   "homepage": "https://Alish-Rawat.github.io/FoodApp",
   "version": "1.0.0",
   "scripts": {
+    "cleanup": "rmdir /q /s .parcel-cache dist || echo 'no cached files'",
     "start": "parcel index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build index.html",
     "test": "jest",
     "watch-jest": "jest --watchAll"
@@ -15,8 +16,8 @@
   "keywords": [],
   "devDependencies": {
     "@babel/core": "^7.23.2",
-    "@babel/preset-react": "^7.22.15",
     "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
     "@testing-library/react": "^14.0.0",
     "babel-jest": "^29.7.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
